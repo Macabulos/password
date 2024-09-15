@@ -1,0 +1,137 @@
+
+  /* Responsive table */
+  .content1 {
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    padding: 20px;
+    width: 80%;
+    transition: margin-left 0.3s;
+  }
+  .sidebar.open ~ .content1 h1{
+    margin-left: 70px;
+  }
+  
+ .sidebar.open ~ .create  {
+    margin-left: 70px;
+  }
+
+  .sidebar.open ~ .content1 .link {
+    margin-left: 70px;
+  }
+
+  .sidebar.open ~ .content1 .table{
+    margin-left: 70px;
+  }
+  .create{
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    background-color: #9cad00;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .create:hover{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+  }
+
+  .edit{
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    background-color: #00ff2a;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .edit:hover{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+  }
+
+  .delete{
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .delete:hover{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+  }
+
+
+
+  h1{
+    text-align: center;
+  }
+  
+  .table {
+      margin-top: 2%;
+      border-radius: 4px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-right: 50%;
+      text-align: center;
+      width: 100%;
+     
+    }
+    
+    .table th, .table td {
+      text-align: center;
+      padding: 12px;
+    }
+    
+    .table th {
+      background-color: #ffffff;
+      font-weight: bold;
+      color: #000000;
+    }
+    
+    .table tbody tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    
+    .table tbody tr:hover {
+      background-color: #cacaca;
+    }
+
+    /* Responsive styles */
+@media (max-width: 768px) {
+  .link {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .create, .btn-primary {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 24px;
+  }
+
+  .table th, .table td {
+      padding: 8px;
+  }
+
+  .edit, .delete {
+      width: 100%;
+      text-align: center;
+  }
+}

@@ -1,0 +1,126 @@
+
+body{
+    background-color: #ffffff;
+}
+.container{
+    width: 1000px;
+    margin: 8% auto;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 8%;
+    background-color: #E6E1FE;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    display: block;
+    
+
+}
+img{
+    float: right;
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 300px;
+    
+}
+span{
+    font-weight: 700;
+    font-size: 65px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(43, 41, 41);   
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;  
+    animation: glow 2s ease-in-out infinite;
+    text-transform: capitalize;
+}
+@keyframes glow {
+    0%, 100% {
+      color: #FFF;
+      text-shadow: 0 0 10px #001aff, 0 0 50px #2f00ff, 0 0 100px #0026ff;
+      
+    }
+    
+    10%, 90% {
+      color: #111;
+      text-shadow: none;
+    }
+  }
+  .container > span:nth-child(1)  { animation-delay: 0.00s; } /* I */
+  .container > span:nth-child(2)  { animation-delay: 0.25s; } /* m */
+  .container > span:nth-child(3)  { animation-delay: 0.50s; } /* J */
+  .container > span:nth-child(4)  { animation-delay: 0.75s; } /* o */
+  .container > span:nth-child(5)  { animation-delay: 1.00s; } /* h */
+  .container > span:nth-child(6)  { animation-delay: 1.25s; } /* n */
+  .container > span:nth-child(7)  { animation-delay: 1.50s; } /* L */
+  .container > span:nth-child(8)  { animation-delay: 1.75s; } /* e */
+  .container > span:nth-child(9)  { animation-delay: 2.00s; } /* s */
+  .container > span:nth-child(10) { animation-delay: 2.25s; } /* t */
+  .container > span:nth-child(11) { animation-delay: 2.50s; } /* e */
+  .container > span:nth-child(12) { animation-delay: 2.75s; } /* r */
+  .container > span:nth-child(13) { animation-delay: 3.00s; } /* M */
+  .container > span:nth-child(14) { animation-delay: 3.25s; } /* . */
+  .container > span:nth-child(15) { animation-delay: 3.50s; } /* M */
+  .container > span:nth-child(16) { animation-delay: 3.75s; } /* a */
+  .container > span:nth-child(17) { animation-delay: 4.00s; } /* c */
+  .container > span:nth-child(18) { animation-delay: 4.25s; } /* a */
+  .container > span:nth-child(19) { animation-delay: 4.50s; } /* b */
+  .container > span:nth-child(20) { animation-delay: 4.75s; } /* u */
+  .container > span:nth-child(21) { animation-delay: 5.00s; } /* l */
+  .container > span:nth-child(22) { animation-delay: 5.25s; } /* o */
+  .container > span:nth-child(23) { animation-delay: 5.50s; } /* s */
+  .container > span {
+    animation-duration: 10s; 
+    animation-iteration-count: infinite;
+}
+h2, p{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: rgb(0, 0, 0);
+    margin: 20px 0 30px;
+    line-height: 10%;
+}
+
+
+/* From Uiverse.io by alexroumi */ 
+button {
+    margin-top: 50px;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 18px;
+    color: #ffffff;
+    z-index: 1;
+    background: #2604ec;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button:hover {
+    color: #e8e8e8;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
